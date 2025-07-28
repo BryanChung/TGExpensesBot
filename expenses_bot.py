@@ -305,8 +305,8 @@ async def paid(update: Update, context: ContextTypes.DEFAULT_TYPE):
 if __name__ == "__main__":
     request = HTTPXRequest(connect_timeout=30.0, read_timeout=30.0)
     import os
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-app = ApplicationBuilder().token(BOT_TOKEN).request(request).build()
+    BOT_TOKEN = os.getenv("BOT_TOKEN")
+    app = ApplicationBuilder().token(BOT_TOKEN).request(request).build()
 
 
     conv = ConversationHandler(
