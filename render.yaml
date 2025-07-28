@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: tgexpensesbot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python expenses_bot.py
