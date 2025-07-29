@@ -2,7 +2,7 @@ import os
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = os.getenv("8297091916:AAEKGh-uo2c6mm-IJW10HPhvNwcaT9XcN0g")
+TOKEN = os.getenv("8297091916:AAFX8sduZyh3jseyDRv-VEHafYjR8hCljf0")
 
 # In-memory store for user expenses
 user_expenses = {}
