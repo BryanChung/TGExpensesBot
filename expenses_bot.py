@@ -2,9 +2,8 @@ import os
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = os.getenv("8297091916:AAGhAxjqk-9L1QMXaT2SsfWjaOOJwQEfnAo")
-import os
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+import os
 print("DEBUG: Fly.io token length =", len(TOKEN) if TOKEN else "MISSING")
 if TOKEN:
     print("DEBUG: First 10 chars =", TOKEN[:10])
