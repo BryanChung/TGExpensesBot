@@ -2,8 +2,13 @@ import os
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = os.getenv("8297091916:AAFw21hoCU27HS3MoVnO5lAzCKMc0UeW6Io")
-print("DEBUG: TOKEN is", "SET" if TOKEN else "MISSING")
+TOKEN = os.getenv("8297091916:AAGhAxjqk-9L1QMXaT2SsfWjaOOJwQEfnAo")
+import os
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+print("DEBUG: Fly.io token length =", len(TOKEN) if TOKEN else "MISSING")
+if TOKEN:
+    print("DEBUG: First 10 chars =", TOKEN[:10])
+
 
 # In-memory store for user expenses
 user_expenses = {}
