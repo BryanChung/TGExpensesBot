@@ -5,5 +5,4 @@ app = "tgexpensesbot"
 
 [env]
   PYTHONUNBUFFERED = "1"
-
-# No services, no checks – Fly.io won't run smoke check
+  
