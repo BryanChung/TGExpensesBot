@@ -5,10 +5,3 @@ app = "tgexpensesbot"
 
 [env]
   PYTHONUNBUFFERED = "1"
-
-# Disable all HTTP checks because this is a long-running bot (no web server)
-[checks]
-  [checks.no_http]
-    type = "process"
-    interval = "30s"
-    timeout = "5s"
