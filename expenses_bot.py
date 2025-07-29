@@ -2,7 +2,8 @@ import os
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = os.getenv("8297091916:AAFX8sduZyh3jseyDRv-VEHafYjR8hCljf0")
+TOKEN = os.getenv("8297091916:AAFw21hoCU27HS3MoVnO5lAzCKMc0UeW6Io")
+print("DEBUG: TOKEN is", "SET" if TOKEN else "MISSING")
 
 # In-memory store for user expenses
 user_expenses = {}
