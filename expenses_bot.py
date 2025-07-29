@@ -4,10 +4,6 @@ from telegram.ext import Application, CommandHandler, MessageHandler, ContextTyp
 
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 import os
-print("DEBUG: Fly.io token length =", len(TOKEN) if TOKEN else "MISSING")
-if TOKEN:
-    print("DEBUG: First 10 chars =", TOKEN[:10])
-
 
 # In-memory store for user expenses
 user_expenses = {}
